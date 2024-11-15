@@ -1,22 +1,4 @@
-!#############################################################
-!   ____    _                   _____   _____    _    _____  #
-!  |  _ \  | |          /\     |_   _| |  __ \  ( )  / ____| #
-!  | |_) | | |         /  \      | |   | |__) | |/  | (___   #
-!  |  _ <  | |        / /\ \     | |   |  _  /       \___ \  #
-!  | |_) | | |____   / ____ \   _| |_  | | \ \       ____) | #
-!  |____/_ |______| /_/  __\_\_|_____| |_|  \_\ ____|_____/  #
-!   / ____| |_   _| |  \/  | |  __ \  | |      |  ____|      #
-!  | (___     | |   | \  / | | |__) | | |      | |__         #
-!   \___ \    | |   | |\/| | |  ___/  | |      |  __|        #
-!   ____) |  _| |_  | |  | | | |      | |____  | |____       #
-!  |_____/  |_____| |_| _|_|_|_|_  __ |______| |______|      #
-!  |  _ \      /\      / ____| | |/ / | |  | | |  __ \       #
-!  | |_) |    /  \    | |      | ' /  | |  | | | |__) |      #
-!  |  _ <    / /\ \   | |      |  <   | |  | | |  ___/       #
-!  | |_) |  / ____ \  | |____  | . \  | |__| | | |           #
-!  |____/  /_/    \_\  \_____| |_|\_\  \____/  |_|           #
-!                                                            #
-!#############################################################
+# Blair's Simple Backup
 
 A small script to automate backups on your local machine.
 
@@ -24,15 +6,7 @@ This Bash script creates an automated backup system that sets up full backups we
 
 The script takes advantage of the ~/.config/autostart/ folder to run automatically upon login. It checks the time to ensure backups only run once every 24 hours (for daily incremental backups) or every 7 days (for full backups).
 
-!#####################################################
-!   _____ _   _  _____ _______       _      _        #
-!  |_   _| \ | |/ ____|__   __|/\   | |    | |       #
-!    | | |  \| | (___    | |  /  \  | |    | |       #
-!    | | | . ` |\___ \   | | / /\ \ | |    | |       #
-!   _| |_| |\  |____) |  | |/ ____ \| |____| |____   #
-!  |_____|_| \_|_____/   |_/_/    \_\______|______|  #
-!                                                    #
-!#####################################################                                                 
+# Install
                                              
 You can either download the file "simple_backup_tool.sh" from the main repo,
 or you can clone the repository directly from GitHub:
@@ -51,16 +25,8 @@ chmod +x simple_backup_tool.sh
 
 From there, the script will run automatically at login (as long as parameters are met).
 
-! ################################
-!  _______ _____ _____   _____   #
-! |__   __|_   _|  __ \ / ____|  #
-!    | |    | | | |__) | (___    #
-!    | |    | | |  ___/ \___ \   #
-!    | |   _| |_| |     ____) |  #
-!    |_|  |_____|_|    |_____/   #
-!                                #
-!#################################                              
-                              
+# Tips
+
 If you would like to run the backup manually, you can find the script located in ~/.backup_script.sh
 
 If you would like to remove the autorun feature, you can remove the file "~/.config/autostart/backup_script.sh.desktop"
