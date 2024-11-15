@@ -109,7 +109,7 @@ echo -e "########################### Generating Script #########################
 OUTPUT_SCRIPT="$HOME/.backup_script.sh"
 
 cat <<EOL > "$OUTPUT_SCRIPT"
-#!/bin/sh
+#!/bin/bash
 
 # Set up paths and date formats
 BACKUP_DIR="$BACKUP_DIR"
