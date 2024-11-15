@@ -147,6 +147,7 @@ if [ -e "\$WEEKLY_TIMESTAMP_FILE" ]; then
         tar -cvpzf "\$FULL_BACKUP_DIR/full_backup_\$DATE.tar.gz" \\
             --exclude-from="\$EXCLUDE_LIST" \\
             --listed-incremental="\$SNAPSHOT_FILE" \\
+            --totals \\
             \$BACKUP_TARGET &> "\$FULL_BACKUP_DIR/full_backup_\$DATE.log"
 
         # Remove older full backups if there are more than the weekly limit
@@ -164,6 +165,7 @@ else
     tar -cvpzf "\$FULL_BACKUP_DIR/full_backup_\$DATE.tar.gz" \\
         --exclude-from="\$EXCLUDE_LIST" \\
         --listed-incremental="\$SNAPSHOT_FILE" \\
+        --totals \\
         \$BACKUP_TARGET &> "\$FULL_BACKUP_DIR/full_backup_\$DATE.log"
 
     # Update weekly backup timestamp
@@ -190,6 +192,7 @@ fi
     tar -cvpzf "\$DAILY_BACKUP_DIR/incremental_backup_\$DATE.tar.gz" \\
         --listed-incremental="\$SNAPSHOT_FILE" \\
         --exclude-from="\$EXCLUDE_LIST" \\
+        --totals \\
         \$BACKUP_TARGET &> "\$DAILY_BACKUP_DIR/incremental_backup_\$DATE.log"
 
     # Remove older daily backups if there are more than the daily limit
