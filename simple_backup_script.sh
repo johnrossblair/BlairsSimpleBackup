@@ -24,7 +24,6 @@ echo "##############################################################"
 echo ""
 
 # Functions
-
 clean_path() {
     if [[ "${ANSWER:0:1}" == "~" ]]; then   # Replace "~" with "home/$USER" and remove "/" at the end if either exists.
         ANSWER="/home/$USER${ANSWER:1}"     # This resolves the issue where if user uses "~" to specify their home directory,
