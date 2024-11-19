@@ -8,7 +8,7 @@ The script takes advantage of the ~/.config/autostart/ folder to run automatical
 
 # Install
                                              
-You can either download the file "simple_backup_tool.sh" from the main repo,
+You can either download the file "simple_backup_script.sh" from the main repo,
 or you can clone the repository directly from GitHub:
 
 # Clone the repo:
@@ -18,10 +18,10 @@ git clone https://github.com/johnrossblair/BlairsSimpleBackup.git
 cd BlairsSimpleBackup/
 
 # Make the file executable
-chmod +x simple_backup_tool.sh
+chmod +x simple_backup_script.sh
 
 # Run the script:
-./simple_backup_tool.sh
+./simple_backup_script.sh
 
 From there, the script will run automatically at login (as long as parameters are met).
 
